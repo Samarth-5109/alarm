@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Alaram Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alarm Clock</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="clock-container">
+<section class="clock-sec">
+            <div class="clock">05:46:22</div>
+            <div class="time-set">
+                <input id="hour" type="number">
+                <input id="min" type="number">
+            </div>
+            <button id="add-btn">Add Alarm</button>
+        </section>
+        <!-- <section class="list-sec">
+            <div class="list-container">
+                <div class="alarm-list">
+                    <p class="time">05:46</p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-toggle-on"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+        </section> -->
+        <div class="activeAlarms"></div>
+        </div>
+        
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
